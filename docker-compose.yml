@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    container_name: container_php_pdo_sql_postgresql
+    environment:
+      POSTGRES_PASSWORD: testing
+      POSTGRES_USER: test
+      POSTGRES_DB: db_test_pdo
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+    ports:
+      - 5432:5432
+    volumes:
+      - /home/jmariona/Desktop/DocumentsRoot/PRACTICES/PHP/htdocs/POO_SQL/data:/var/lib/postgresql/data/pgdata

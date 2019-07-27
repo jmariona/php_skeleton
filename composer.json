@@ -1,0 +1,16 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^3.4",
+        "dompdf/dompdf": "^0.8.3",
+        "kint-php/kint": "^3.2",
+        "fightbulc/moment": "^1.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
